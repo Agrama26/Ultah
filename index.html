@@ -252,6 +252,19 @@
         position: relative;
         z-index: 2;
       }
+      button {
+        font-size: 18px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 10px;
+        background: #4caf50;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #45a049;
+      }
     </style>
   </head>
   <body>
@@ -327,21 +340,20 @@
           >
             🎵 Putar Musik
           </button>
-          <button
+          <!-- <button
             class="cake-button"
             onclick="playBirthdaySong()"
             style="background: linear-gradient(145deg, #4ecdc4, #45b7d1)"
           >
             🎶 Lagu Ulang Tahun
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
 
-    <audio id="backgroundMusic" loop>
-      <source source src="SelamatUlangTahun.mp3" type="audio/mpeg" />
+    <audio id="backgroundMusic" autoplay loop>
+      <source src="SelamatUlangTahun.mp3" type="audio/mpeg" />
     </audio>
-
     <script>
       // Balon
       function createBalloons() {
